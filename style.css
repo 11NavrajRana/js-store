@@ -1,0 +1,546 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: black;
+    padding: 10px;
+}
+.Navbar__Items,.Navbar__Link-brand{
+    display: flex;
+}
+.Navbar__Items{
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Navbar__Link{
+    list-style: none;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+li a:hover{
+    color: #fcd600;
+    border-bottom: 1px solid #fcd600;
+    transition:0.5;
+}
+ a{
+   text-decoration: none;
+   color: #fff;
+}
+.Navbar__Link-brand{
+    justify-content: center;
+    padding-right: 30px;
+}
+.logo{
+    width: 150px;
+    height: 140px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.Navbar__Link-toggle{
+    display: none;
+}
+.Navbar__Link-toggle .fa{
+    color: #fff;
+}
+
+/*hero area styling*/
+.container{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.52),rgba(0, 0, 0, 0.73)),url(pexels.jpg);
+    background-size: cover;
+    min-height: 90vh;
+    background-position:center;
+}
+.container h1{
+    padding-top: 70px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 60px;
+    font-family: 'Merriweather', serif;  
+}
+span,small{
+    color: #fcd600;
+    font-weight:bold;
+    font-size:100px;
+}
+small{
+    font-size: 30px;
+}
+/*about area style*/
+.about{
+    padding-bottom: 20px;
+}
+.about h1{
+    text-align: center;
+    padding:30px;
+    font-size:60px;
+    font-family: 'Arvo', serif;
+}
+.about h1,.flex p{
+    text-transform: capitalize;
+    color: rgb(238, 82, 82);
+}
+.about img
+{
+    width:50%;
+    border-top-right-radius:40px;
+    border-bottom-left-radius: 40px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    column-gap:30px;
+    margin: 30px;
+    padding: 20px;
+}
+.flex p{
+    padding-top: 30px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn{
+    font-size: 20px;
+    background-color: rgb(238, 82, 82);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-color:#fff;
+    cursor: pointer; 
+    text-transform: uppercase; 
+    border-radius:30px;
+}
+.btn:hover{
+    background-color:rgb(238, 82, 82);
+    color: black;
+}
+/*additional section area*/
+.additational{
+    background-image:linear-gradient(to left, rgba(0, 0, 0, 0.52),rgba(0, 0, 0, 0.73)), url(add.jpg);
+    background-position:top;
+    background-size: cover;
+    min-height: 50vh;
+    background-attachment: fixed;
+}
+.additational h1{
+    text-align: center;
+    padding-top:60px;
+    font-size: 50px;
+    letter-spacing: 15px;
+    color: #fff;
+}
+/*services style*/
+.services{
+    padding-bottom: 30px;
+}
+.services h1{
+    text-align: center;
+    font-size: 60px;
+    text-transform: capitalize;
+    padding: 60px;
+    color: rgb(238, 82, 82);
+    font-family: 'Arvo', serif;    
+}
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}  
+.card-body img{
+    width: 435px;
+    height: 350px;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius:30%;
+    box-shadow: 3px 10px 20px  5px rgb(238, 82, 82); 
+}
+.card-body h2{
+    padding-top: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    color: rgb(238, 82, 82);
+}
+.card-body p{
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+button{
+    font-size: 20px;
+    color: #fff;
+    background-color:rgb(238, 82, 82) ;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-color:#fff;
+    cursor: pointer; 
+    text-transform: uppercase; 
+    border-radius:30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+}
+button:hover{
+    color:black;
+}
+/*product-style*/
+.product{
+    padding:50px;
+    background-color: black;
+}
+.product h1{
+    text-transform: capitalize;
+    padding: 30px;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Arvo', serif;
+    color: #fff;
+}
+.lead{
+    text-align: center;
+    padding: 0 50px;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    color: #fff;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+.content-image{
+    height: 500px;
+}
+.content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .content .content-overlay {
+    background: rgba(69, 69, 69, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .content:hover .content-overlay{
+    opacity: 1;
+  }
+  .content-image{
+    width: 100%;
+  }
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  .content-details h3{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+  .content-details p{
+    color: #fff;
+    font-size: 0.8em;
+  }
+  .fadeIn-top{
+    top: 20%;
+  } 
+  /*team members*/
+  .team h1,.team p,.info h2{
+      text-align: center;
+      text-transform: capitalize;
+      color: rgb(238, 82, 82);
+  } 
+  .team h1{
+    padding: 50px;
+    font-size: 60px;
+    font-family: 'Arvo', serif;
+  }
+  .team p{
+      padding-bottom: 20px;
+  }
+  .info h2{
+      padding-top: 20px;
+  }
+  .member img{
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      box-shadow: 5px 5px 20px 1px rgb(95, 94, 94);
+  }
+  .member{
+      padding: 20px;
+      display: flex;
+      justify-content: space-evenly;
+    
+  }
+  .social{
+      text-align:center;
+      letter-spacing:10px;
+  }
+  /*newsletter style*/
+  .newsletter{
+      background-image:linear-gradient(to left, rgba(0, 0, 0, 0.52),rgba(0, 0, 0, 0.73)),url(shade.jpg);
+      background-position:top;
+      padding: 60px;
+      margin: auto;  
+  }
+  .news{
+      background-color: rgb(255, 255, 255);
+      height: 40vh;
+      max-width: 70%;
+      margin: auto;
+      border-radius:40px;
+  }
+  .news h1{
+      text-align: center;
+      padding: 20px;
+      text-transform: capitalize;
+      font-size: 40px;
+      font-family: 'Josefin Sans', sans-serif;
+  }
+  .news p{
+      text-align:center;
+  }
+  .form{
+    padding: 30px;
+  }
+  input[type=email]{
+    width: 70%;
+    padding: 20px;
+    margin: 8px 150px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  /*footer style*/
+.footer
+{
+      padding-top: 50px;
+      background-color:black ;
+}
+.foot
+{
+    display: flex;
+    justify-content: space-around;
+}
+.contact h2{
+      color: #fff;
+      text-align: center;
+      font-size: 30px;
+      text-transform: capitalize;
+  }
+  .contact{
+      padding: 40px;
+  }
+  .contact ul{
+      color: #fff;
+      list-style: none;
+  }
+  .contact li{
+      font-size: 15px;
+      padding: 10px;
+      letter-spacing:5px;
+      cursor: pointer;
+  }
+  .contact li a{
+      text-decoration: none;
+      color: #fff; 
+  }
+
+  .fa ,li a:hover{
+    color: rgb(238, 82, 82);
+    border-bottom: none;
+  }
+  .copyright{
+      text-align: center;
+      color: #fff;
+      font-size: 18px;
+      text-transform: capitalize;
+      padding: 20px;
+      border-top: 2px solid rgb(238, 82, 82);
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  @media only screen and (max-width:600px) {
+.Navbar__Items{
+    flex-direction: column;
+    padding: 20px;
+}
+.Navbar__Items {
+    display: none;
+  }
+  .Navbar__ToggleShow {
+    display:flex;
+    padding: 20px;
+  }
+  .Navbar__Link-brand{
+      padding-right: 0;
+  }
+  .Navbar__Link-toggle {
+    display: flex;
+    justify-content: center;
+   } 
+/*main-section*/
+.container{
+    min-height: 40vh;
+}
+.container h1{
+    padding: 40px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+span{
+    font-size: 70px;
+}
+small{
+    font-size: 20px;
+}
+/*about-section*/
+.about h1{
+    font-size: 40px;
+}
+.flex{
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+}
+.flex p{
+    padding: 20px;
+    font-size: 20px;
+}
+.about img{
+    width: 100%;
+}
+.btn{
+    font-size: 15px;
+    padding: 15px 15px;
+}
+/*additional-section*/
+.additational{
+    min-height: 35vh;
+}
+.additational h1{
+    font-size:30px;
+    letter-spacing: 5px;
+}
+/*services-section*/
+.services h1{
+    padding: 35px;
+    font-size:40px;
+    }
+    .cards{
+        flex-wrap: wrap;
+        padding:25px;
+    }
+    .card-body img{
+        max-width: 100%;
+        height:250px;
+    }
+    .card-body h2{
+        font-size: 25px;
+    }
+    .card-body button{
+        font-size: 15px;
+        padding: 15px 15px;
+    }
+    /*product section*/
+    .product{
+        padding: 40px;
+    }
+    .product h1{
+        font-size: 40px;
+        padding: 20px;
+    }
+    .wrapper{
+        flex-wrap: wrap;
+    }
+    .content{
+        width: 100%;
+    }
+    .lead{
+        padding:10px;
+    }
+    /*team-section*/
+    .team h1{
+        padding: 30px;
+        font-size: 40px;
+    }
+    .member{
+        flex-wrap: wrap;
+    }
+    .member img{
+        width: 250px;
+        height: 250px;
+    }
+    /*newsletter-section*/
+    .news{
+        max-width: 100%;
+        height: 50vh;
+    }
+    .news h1{
+        font-size: 30px;
+    }
+    input[type=email]{
+        width: 100%;
+        margin: 10px 5px;
+    }
+    button{
+        font-size: 15px;
+    }
+    /*footer-section*/
+    .foot{
+        flex-wrap: wrap;
+    }
+    .images{
+        width: 300px;
+        height: 250px;
+    }
+    .contact{
+        padding: 20px;
+    }
+
+}
